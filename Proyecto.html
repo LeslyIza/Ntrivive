@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!DOCTYPE html>
+<html>
+<head>
+  <!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+	<title>NUTREVIVE</title>
+
+        <link rel="stylesheet" href="style2.css">
+        
+<style> 
+
+body{background-color:#fdfdfd; padding:150px; font-family:Arial; }
+#menu{
+  
+background:#80bda1;
+}
+#menu ul{
+list-style:none;
+margin:0;
+padding:0;
+display: block; 
+font-weight: 700;
+font-size: 1.0em;
+}
+#menu ul li{
+display:inline-block;
+}
+
+#menu ul li a{
+color:#000000;
+display:block;
+padding:45px 50px;
+text-decoration:none;
+}
+#menu ul li a:hover{
+background-color:#63917b
+}
+.centered-section {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .centered-block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .centered-block.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .centered-img {
+      flex: 1 1 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .centered-img img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .centered-text {
+      flex: 1 1 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+    }
+
+    .centered-text h2 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .centered-text p {
+      font-size: 1rem;
+      color: #333;
+      max-width: 600px;
+    }
+
+    @media (max-width: 768px) {
+      .centered-block,
+      .centered-block.reverse {
+        flex-direction: column;
+      }
+
+      .centered-text,
+      .centered-img {
+        flex: none;
+        width: 100%;
+      }
+
+      .centered-img img {
+        max-width: 90%;
+      }
+    }
+ /* Contenedor general debajo del menú */
+ .card28-container {
+      display: flex;
+      justify-content: center;
+      padding: 3rem 1rem;
+      background-color: #ffffff;
+      box-sizing: border-box;
+    }
+
+    /* Grid 2x2 */
+    .card28-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 28rem);
+      grid-template-rows: repeat(2, 25rem);
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    /* Tarjeta individual */
+    .card28-box {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .card28-box:hover {
+      transform: translateY(-10px);
+    }
+
+    .card28-img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .card28-box:hover .card28-img {
+      transform: scale(1.1);
+    }
+
+    .card28-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.8rem;
+    }
+
+    .card28-text {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .card28-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+
+      .card28-box {
+        width: 90vw;
+        height: auto;
+        aspect-ratio: 28 / 25; /* mantiene proporción */
+      }
+    }
+/* Centrar el contenedor del video */
+.video-container {
+      display: flex;
+      justify-content: center; /* Centrado horizontal */
+      align-items: center; /* Centrado vertical */
+      height: 100vh; /* Altura completa de la pantalla */
+    }
+
+    /* Aseguramos que el iframe tenga un tamaño fijo */
+    .video-container iframe {
+      width: 640px; /* Ancho fijo */
+      height: 360px; /* Alto fijo */
+    }
+.title-fancy {
+            font-size: 50px;
+            font-family: 'Pacifico', cursive;
+            color: #000000af;
+            text-shadow: 3px 3px 8px #c0604380;
+          }
+          table {
+            width: 80%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #d1e7fd;
+            transition: 0.3s;
+        }
+        .contenedor {
+            display: flex;
+            gap: 20px;
+        }
+        .recuadro {
+            width: 200px;
+            height: 200px;
+            border: 5px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .recuadro img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ajusta la imagen para llenar el recuadro */
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            overflow: hidden;
+            width: 300px;
+            cursor: pointer;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            padding: 15px;
+            margin: 0;
+        }
+        .info {
+            display: none;
+            padding: 20px;
+        }
+        .info {
+            display: none;
+            padding: 20px;
+        }
+       
+</style>
+<script>
+  function showInfo(id) {
+            document.querySelectorAll('.info').forEach(el => el.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+</script>
+</head>
+
+<body>
+  <header id="main-header">
+    <a id="logo-header" href="#">
+        <!-- Logo de la empresa, usando una imagen -->
+        <img src="imagenes/Logo_letras_iniciales_de_nombre_minimalista_botadito_verde-removebg-preview (1).png" alt="Logo de Nutrevive" id="logo-img">
+        <span class="site-name">NUTREVIVE</span>
+    </a>
+    
+    <div id="menu">
+        <ul>
+            <li><a href="#inicio" class="menu-link" onclick="window.location='#inicio'; return false;"> INICIO</a></li>   
+            <li><a href="#servicios" class="menu-link" onclick="window.location='#servicios'; return false;">ETAPAS DE VIDA</a></li>
+            <li><a href="#acerca-de" class="menu-link" onclick="window.location='#acerca-de'; return false;">ENFERMEDADES </a></li>
+            <li><a href="#contacto" class="menu-link" onclick="window.location='#contacto'; return false;"> ACTIVIDAD FISICA </a></li>
+            <li><a href="#dietas" class="menu-link" onclick="window.location='#dietas'; return false;"> DIETAS</a></li> 
+            
+        </ul>
+    </div>
+</header>
+
+ 
+  
+    <section id="main-content">
+		<article>
+			<div class="content">
+        <img src="imagenes/Infografía de Alimentación Saludable Ilustrado Verde.jpg" >
+
+				<h1>¿Sabías que nutrición, no es precisamente lo mismo que alimentación?</h1>
+
+        <p>La nutrición se refiere a los nutrientes que componen los alimentos, implica los procesos que suceden en tu cuerpo después de comer, es decir la obtención, asimilación y digestión de los nutrimientos por el organismo.</p>
+				<p>Mientras que la alimentación es la elección, preparación y consumo de alimentos, lo cual tiene mucha relación con el entorno, las tradiciones, la economía y el lugar en donde vives.</p>
+        <p>La alimentación saludable cumple con necesidades nutricionales que necesita el cuerpo, para mantener una buena salud. Además, comer sano te protege de sufrir enfermedades como obesidad, azúcar en la sangre y presión alta.</p>
+        <p>Por el contrario, un alimento "no saludable" aporta poco valor nutricional y tiene muchas calorías pues usualmente son ricos en grasas y azúcares.</p>
+				
+			</div>
+		</article> 
+	</section>
+    <div id="content">
+        <div id="inicio" class="content-section">
+          <div style="white-space: pre;"> </div>
+          <span style="margin-left: 20px;"></span>
+          <div style="white-space: pre;"> </div>
+          <span style="margin-left: 20px;"></span>
+          <div style="white-space: pre;"> </div>
+         
+          
+         <h1 class="title-fancy">ALIMENTACIÓN SALUDABLE</h1>
+         
+          <center><img src="imagenes/imagen1.jpg" width="1250px" height="650px"></center>
+            <height><p>Diariamente, al consumir alimentos no hay conocimiento claro de sus contenidos nutricionales, calorías, cantidades de sodio o azúcar y se habla que es preferible consumir más proteínas que harinas o que son mejores las dietas recomendadas por los conocidos o encontradas en páginas de internet que consultar a un especialista.
+
+              Generalizando, se puede decir que la alimentación saludable es aquella que proporciona los nutrientes que el cuerpo necesita para mantener el buen funcionamiento del organismo, conservar o restablecer la salud, minimizar el riesgo de enfermedades, garantizar la reproducción, gestación, lactancia, desarrollo y crecimiento adecuado. Para lograrlo, es necesario el consumo diario de frutas, verduras, cereales integrales, legumbres, leche, carnes, aves y pescado y aceite vegetal en cantidades adecuadas y variados.
+              <center><h1>¿Cómo saber qué aporta cada uno al organismo?</h1></center>
+                <u><strong><h1>GRASAS</h1></strong></u>
+                <center><img src="https://labuenanutricion.com/wp-content/uploads/2020/09/que-son-las-grasas-saturadas.jpg" width="650px" height="550px"></center>
+                  <ul type="square">
+                    <li>Las grasas son un nutriente que se encuentra en los alimentos y que el cuerpo utiliza para generar energía, hormonas y membranas celulares. Son esenciales para el buen funcionamiento del organismo, pero es importante consumirlas con moderación.</li>
+                    <li> Es esencial comer algunas grasas, aunque también es dañino comer demasiado, ya que son un tipo de nutriente que se obtiene de la alimentación.
+                    <li>Las grasas que usted consume le dan al cuerpo la energía que necesita para trabajar adecuadamente. </li>
+                    <li>Los tipos de grasas se clasifican en saturadas, monoinsaturadas, poliinsaturadas y grasas trans. Las grasas son nutrientes que aportan energía y ayudan a absorber vitaminas. 
+                    </ul>
+                      <ol>
+                        <li> Grasas saturadas</li> 
+                        <ul type="square">
+                          <li>Son sólidas a temperatura ambiente </li>
+                            <li>Se encuentran en carnes grasas, productos lácteos enteros y aceites de coco o palma </li>
+                              <li>Se asocian con un mayor riesgo de enfermedades cardíacas y aumento del colesterol "malo"</li> </ul>
+                      <li>Grasas monoinsaturadas:</li>
+                      <ul type="square">
+                        <li>Son saludables para el corazón</li>
+                        <li> Se encuentran en frutos secos, semillas de girasol, calabaza o sésamo, y aguacate</li>
+                        <li>Ayudan a reducir el colesterol "malo" y a controlar los niveles de glucosa en sangre</li></ul>
+                      <li>Grasas poliinsaturadas: </li>
+                      <ul type="square">
+                        <li>Se encuentran en alimentos de origen vegetal, pescados y mariscos</li>
+                        <li>Contribuyen a reducir los triglicéridos y a proteger contra enfermedades cardíacas</li></ul>
+                      <li>Grasas trans:</li>
+                      <ul type="square">
+                        <li>Son grasas hidrogenadas que se obtienen de aceites vegetales líquidos que se convierten en grasas semisólidas o sólidas</li>
+                        <li>Se encuentran en aperitivos envasados, artículos horneados, margarinas en barra, grasa alimentaria y comidas rápidas</li></ul></li>
+                <u><strong><h1>CARBOHIDRATOS</h1></strong></u>
+                <center><img src="https://labuenanutricion.com/wp-content/uploads/2020/09/que-son-los-carbohidratos-1.jpg" width="650px" height="550px"></center>
+                <p>Los carbohidratos suelen tener mala prensa, sobre todo cuando se trata del aumento de peso. Pero no todos los carbohidratos (también llamados hidratos de carbono) son malos. Tienen numerosos beneficios para la salud, por lo cual tienen un lugar bien ganado en la alimentación. De hecho, el cuerpo necesita carbohidratos para funcionar bien.
+
+                Pero es posible que algunos carbohidratos sean mejores para ti que otros.</p>
+                <p>Algunas fuentes comunes de carbohidratos naturales son las siguientes:</p>
+                <ul type="square">
+                  <li>Verduras</li>
+                  <li>Frutas </li>
+                  <li>Leche</li>
+                  <li>Frutos secos</li>
+                  <li>Granos</li> 
+                  <li>Semillas</li></ul>
+                  <p>    </p>
+                  <p>¿Cuántos carbohidratos se deberia consumir?</p>
+                  <p>La cantidad de carbohidratos que se recomienda consumir al día depende de varios factores, como la actividad física, el peso, la edad, el sexo y el objetivo físico. 
+                    En general, se recomienda que los carbohidratos representen entre el 45% y el 65% de las calorías diarias. Por ejemplo, si se consumen 2000 calorías al día, entre 900 y 1300 de ellas deberían ser carbohidratos. </p>
+                  <p>  Sin embargo, la cantidad de carbohidratos que una persona necesita puede variar según sus objetivos:  </p>
+                  <ul type="square">
+                    <li>Si una persona está embarazada, necesita al menos 175 gramos de carbohidratos al día. </li>
+                    <li>Si una persona quiere aumentar su masa muscular, lo ideal sería consumir 1-1,15 gramos de carbohidratos por kilogramo de peso al día.  </li>
+                    <li>Si una persona hace ejercicio durante más de una hora, debería consumir entre 60 y 80 gramos de carbohidratos por hora. </li>
+                <u><strong><h1>PROTEINAS</h1></strong></u>
+                <center><img src="imagenes/ptoteinas.webp" width="650px" height="550px"></center>
+                <p>   Las proteínas son moléculas grandes y complejas que desempeñan muchas funciones críticas en el cuerpo. Realizan la mayor parte del trabajo en las células y son necesarias para la estructura, función y regulación de los tejidos y órganos del cuerpo.
+
+                  Las proteínas están formadas por cientos o miles de unidades más pequeñas llamadas aminoácidos, que se unen entre sí en largas cadenas. Hay 20 tipos diferentes de aminoácidos que se pueden combinar para formar una proteína. La secuencia de aminoácidos determina la estructura tridimensional única de cada proteína y su función específica. </p>
+                <p>  ¿En qué alimentos podemos encontrar las proteínas?  </p>
+                   <ul type="square">
+                    <li>Los alimentos de origen animal son fuente de proteínas de alto valor biológico, ya que son completas en aminoácidos y tienen una elevada digestibilidad. Entre estos se encuentran la carne de pollo, vaca, cerdo y otros animales, pescados y mariscos, leche, queso, yogur y huevos.</li>
+                    <li>Las proteínas de origen vegetal, provenientes principalmente de cereales y leguminosas, son incompletas, debido a que presentan bajos niveles de algunos aminoácidos esenciales: metionina y lisina (oleaginosas) y lisina, triptófano y treonina (cereales). Además, en los vegetales, la digestibilidad proteica suele ser menor. Por ello, las proteínas de origen vegetal son de menor valor biológico.</li>
+                    <li>La carne de pollo aporta 20 gramos de proteínas de alto valor biológico cada 100 g de alimento. Por lo tanto, una porción estándar de 150 gramos de carne de pollo cubre aproximadamente el 50% de la recomendación diaria de proteínas para un adulto tipo, y casi la totalidad de las necesidades de proteínas de alto valor biológico.</li>
+                  </ol> 
+                  <center><h2>GUÍA DE CONCEPTOS DE ALIMENTACIÓN Y NUTRICIÓN</h2></center>
+                  <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/qHimbDfTXYg" frameborder="0" allowfullscreen></iframe>
+                  </div>
+        </div>
+       
+        </div>  
+        <div id="servicios" class="content-section">
+            <div style="white-space: pre;"> </div>
+          <span style="margin-left: 20px;"></span>
+          <div style="white-space: pre;"> </div>
+            <span style="margin-left: 20px;"></span>
+            <div style="white-space: pre;"> </div>
+            <span style="margin-left: 20px;"></span>.
+              <h1 class="title-fancy">Áreas en las que te podemos ayudar, de acuerdo a tu...</h1>
+              <center><h2>ETAPA DE VIDA </h2></center>
+              <center><p>La alimentación en cualquier período de la vida es trascendental, ya que ayuda al desarrollo y correcto funcionamiento de tu organismo, así como a la prevención y/o el tratamiento de algunas enfermedades.</p></center>
+            <center><h2>NIÑOS </h2></center>
+              <p>La nutrición infantil proporciona a los niños los nutrientes necesarios para su crecimiento, desarrollo físico y mental. Estos nutrientes incluyen macronutrientes como proteínas, carbohidratos y grasas, así como micronutrientes como vitaminas y minerales.</p>
+              <p>A continuacion te muestra las necesidades nutricionales recomendadas para niños según su grupo de edad. Estos valores pueden variar según la región y las recomendaciones de los profesionales de la salud, pero esto te dará una idea general:</p>
+              <p>De 2 a 4 años:pautas diarias para niños/niñas</p>
+              <div class="container">
+            <center><table>
+                    <tr>
+                        <td>Calorias</t>
+                        <td>De 1000 a 1600, según el nivel de crecimiento y de actividad</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Proteína</td>
+                        <td>De 2 a 5 onzas (de 56 a 141 gramos)</td>
+                    </tr>
+                    <tr>
+                        <td>Frutas</td>
+                        <td>De 1 a 1 taza y 1/2</td>
+                    </tr>
+                    <tr>
+                        <td>Verduras</td>
+                        <td>De 1 a 1 taza y 1/2</td>
+                    </tr>
+                    <tr>
+                      <td>Granos o cereales</td>
+                      <td>De 3 a 5 onzas (de 85 a 141 gramos)</td>
+                  </tr>
+                  <tr>
+                    <td>Lácteos</td>
+                    <td>	De 2 a 2 tazas y 1/2</td>
+                </tr>
+                </table></center>
+            </div>
+            <span style="margin-left: 20px;"></span>
+            <p>De 5 a 8 años: pautas diarias para niños/niñas</p>
+              <div class="container">
+            <center><table>
+                    <tr>
+                        <td>Calorias</t>
+                        <td>De 1200 a 1800, según el nivel de crecimiento y de actividad</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Proteína</td>
+                        <td>	De 3 a 5 onzas (de 85 a 141 gramos)</td>
+                    </tr>
+                    <tr>
+                        <td>Frutas</td>
+                        <td>De 1 a 1 taza y 1/2</td>
+                    </tr>
+                    <tr>
+                        <td>Verduras</td>
+                        <td>	De 1 taza y 1/2 a 2 tazas y 1/2</td>
+                    </tr>
+                    <tr>
+                      <td>Granos o cereales</td>
+                      <td>De 4 a 6 onzas (de 113 a 170 gramos)</td>
+                  </tr>
+                  <tr>
+                    <td>Lácteos</td>
+                    <td>De 2 a 2 tazas y 1/2</td>
+                </tr>
+                </table></center>
+            </div>
+            <span style="margin-left: 20px;"></span>
+            <p>De 9 a 13 años: pautas diarias para niños/niñas</p>
+              <div class="container">
+            <center><table>
+                    <tr>
+                        <td>Calorias</t>
+                        <td>De 1400 a 2200, según el nivel de crecimiento y de actividad</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Proteína</td>
+                        <td>De 4 a 6 onzas (de 113 a 170 gramos)</td>
+                    </tr>
+                    <tr>
+                        <td>Frutas</td>
+                        <td>De 1 taza y 1/2 a 2 tazas</td>
+                    </tr>
+                    <tr>
+                        <td>Verduras</td>
+                        <td>De 1 taza y 1/2 a 3 tazas</td>
+                    </tr>
+                    <tr>
+                      <td>Granos o cereales</td>
+                      <td>De 5 a 7 onzas (de 141 a 198 gramo)</td>
+                  </tr>
+                  <tr>
+                    <td>Lácteos</td>
+                    <td>3 tazas</td>
+                </tr>
+                </table></center>
+            </div>
+            <span style="margin-left: 20px;"></span>
+            <center><h2>ADOLESCENTES </h2></center>
+              <span style="margin-left: 20px;"></span>
+              <p>La adolescencia es un periodo de crecimiento acelerado con un aumento muy importante, tanto de la talla como de la masa corporal. Se da un cambio en la composición corporal, modificándose tejidos libres de grasa, hueso y músculo. De este modo se adquiere el 40-50% del peso definitivo, el 20% de la talla adulta y hasta el 50% de la masa ósea.</p>
+              <p>Recomendaciones generales para la alimentación del adolescente:</p>
+              <ul type="square">
+                <li>Permite y procura que consuma en las comidas y en las colaciones de la mañana y de la tarde verduras como acelgas, apio, berros, brócoli, chile serrano, cilantro, col, coliflor, chayote, ejotes, espinacas, flor de calabaza, jitomate, lechuga, nopales, pepinos, rábanos, tomate verde y verdolagas. Todas ellas se pueden consumir frescas, en sopas y guisados.</li>
+                <li>Prepara sus alimentos igual que la de toda la familia, sólo recuerda que el adolescente come más.</li>
+                <li>Procura que consuma agua natural durante el día, entre 2 y 3 litros diarios. Los jóvenes que hacen deporte requieren más agua diariamente.</li>
+                <li>Incluye en su alimentación todos los grupos de alimentos: cereales, leguminosas, alimentos de origen animal, verduras y frutas.</li>
+                <li>Evita que adopte dietas vegetarianas estrictas, éstas favorecen el riesgo de anemia y propicia la deficiencia de hierro y proteínas de buena calidad. Si consume una dieta ovo-lacto-vegetariana no tendrá ningún problema por su alimentación.</li>
+                <li>Procura que tenga buenos hábitos de alimentación: que desayune, coma y cene, que no haga ayunos y que coma de todo.</li>
+              </ul>
+              <div class="container">
+            <center><table>
+                    <tr>
+                        <td>ALIMENTO</t>
+                        <td>CANTIDAD POR DÍA</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Lacteos descremados</td>
+                        <td>3 porciones</td>
+                    </tr>
+                    <tr>
+                        <td>Pescado, Carne y Huevos</td>
+                        <td>1 porcione</td>
+                    </tr>
+                    <tr>
+                        <td>Verduras</td>
+                        <td>3 porciones</td>
+                    </tr>
+                    <tr>
+                      <td>Frutas</td>
+                      <td>2 porciones</td>
+                  </tr>
+                  <tr>
+                    <td>Pan, Cereales y Papas</td>
+                    <td>3 a 3 porciones</td>
+                </tr>
+                </table></center>
+               </div>
+            <span style="margin-left: 20px;"></span>
+        <center><h2>ADULTOS </h2></center>
+              <p>El adulto de 18 a 59 años, necesita tener una alimentación sana y variada para lograr un buen estado de salud, que le permita desempeñarse con energía en sus actividades diarias, de estudio y trabajo, lograr mantener un peso saludable y evitar el desarrollo de enfermedades crónicas, relacionadas a la mala alimentación.</p>
+              <p>Los adultos  deben de consumir un total de 2200 Kcal provenientes de los diferentes grupos de alimentos, distribuidos de la siguiente manera aproximadamente:</p>
+              <center><table>
+                <tr>
+                 <td><center>REQUERIMIENTO DE ENERGÍA POR DÍA ADULTOS DE 18 – 59 AÑOS (2200 Kcal)</center></td>
+                </tr></table>
+            <center><table>
+                <tr>
+                    <td>TIEMPO DE COMIDA</td>
+                    <td>DISTRIBUCIÓN PORCENTUAL</td>
+                  <td>KCAL</td>
+                </tr>
+                <tr>
+                    <td>DESAYUNO</td>
+                    <td>20%</td>
+                    <td>440</td>
+                </tr>
+                <tr>
+                    <td>ALMUERZO</td>
+                    <td>50%</td>
+                    <td>1100</td>
+                </tr>
+                <tr>
+                  <td>MEDIA TARDE</td>
+                  <td>10%</td>
+                  <td>220</td>
+              </tr>
+              <tr>
+                <td>CENA</td>
+                <td>20%</td>
+                <td>440</td>
+            </tr>
+            <tr>
+              <td>TOTAL</td>
+              <td>100%</td>
+              <td>2200</td>
+          </tr>
+            </table></center>
+        </div>
+        <div id="acerca-de" class="content-section">
+            <div style="white-space: pre;"> </div>
+            <div style="white-space: pre;"> </div>
+            <div style="white-space: pre;"> </div>
+            <span style="margin-left: 20px;"></span>
+            <div style="white-space: pre;"> </div>
+            <span style="margin-left: 20px;"></span>
+           
+      <section class="centered-section">
+
+        <!-- Repetición de los 10 bloques -->
+        <div class="centered-block">
+          <div class="centered-img">
+            <img src="https://www.shutterstock.com/image-vector/heart-attack-heartache-cardiac-muscle-260nw-2496200547.jpg" alt="Imagen 1">
+          </div>
+          <div class="centered-text">
+            <h2>1. Enfermedades Cardiovasculares (ECV)</h2>
+            <p>Afectan el corazón y los vasos sanguíneos: hipertensión, infarto, ictus, insuficiencia cardíaca.</p>
+          </div>
+        </div>
+    
+        <div class="centered-block reverse">
+          <div class="centered-img">
+            <img src="https://www.revistadiabetes.org/wp-content/uploads/Diabetes-tipo-2-en-la-edad-pediatrica-%C2%BFQue-la-diferencia-de-la-del-adulto_1.jpg" alt="Imagen 2">
+          </div>
+          <div class="centered-text">
+            <h2>2. Diabetes Tipo 2</h2>
+            <p>Enfermedad metabólica con niveles altos de glucosa por resistencia o insuficiencia de insulina.</p>
+          </div>
+        </div>
+    
+        <div class="centered-block">
+          <div class="centered-img">
+            <img src="https://i0.wp.com/www.clarasancheznutricionista.com/wp-content/uploads/2017/07/portada-cancer.gif?fit=686%2C480&ssl=1" alt="Imagen 3">
+          </div>
+          <div class="centered-text">
+            <h2>3. Cáncer</h2>
+            <p>Enfermedades en las que células crecen de forma anormal y descontrolada.</p>
+          </div>
+        </div>
+    
+        <div class="centered-block reverse">
+          <div class="centered-img">
+            <img src="https://www.gob.mx/cms/uploads/image/file/688375/Nin_oObeso.jpg" alt="Imagen 4">
+          </div>
+          <div class="centered-text">
+            <h2>4. Obesidad y Sobrepeso</h2>
+            <p>Acumulación excesiva de grasa que perjudica la salud.</p>
+          </div>
+        </div>
+    
+        <div class="centered-block">
+          <div class="centered-img">
+            <img src="https://www.guiadisc.com/wp-content/uploads/2013/04/osteoporosis-alimentacion-nutricion-prevencion.jpg" alt="Imagen 5">
+          </div>
+          <div class="centered-text">
+            <h2>5. Osteoporosis</h2>
+            <p>Disminución de densidad ósea con riesgo de fracturas.</p>
+          </div>
+        </div>
+    
+        <div class="centered-block reverse">
+          <div class="centered-img">
+            <img src="https://www.fundacioncadah.org/j289eghfd7511986_uploads/TDAH%20PROBLEMAS%20ALIMENTACION.jpg" alt="Imagen 6">
+          </div>
+          <div class="centered-text">
+            <h2>6. Trastornos de la Alimentación</h2>
+            <p>Anorexia, bulimia y atracones; alteraciones graves en la conducta alimentaria.</p>
+          </div>
+        </div>
+    
+        <div class="centered-block">
+          <div class="centered-img">
+            <img src="https://enfamilia.aeped.es/sites/enfamilia.aeped.es/files/images/articulos/anemia_hierro.jpg" alt="Imagen 7">
+          </div>
+          <div class="centered-text">
+            <h2>7. Anemia</h2>
+            <p>Déficit de glóbulos rojos o hemoglobina que impide transportar oxígeno eficazmente.</p>
+          </div>
+        </div>
+    
+        <div class="centered-block reverse">
+          <div class="centered-img">
+            <img src="https://staticnew-prod.topdoctors.mx/files/Image/large/0ac9377879996cc136afc5d31d1866fb.jpg" alt="Imagen 8">
+          </div>
+          <div class="centered-text">
+            <h2>8. Enfermedades Hepáticas</h2>
+            <p>Alteran el funcionamiento del hígado: hepatitis, cirrosis, hígado graso.</p>
+          </div>
+        </div>
+    
+        <div class="centered-block">
+          <div class="centered-img">
+            <img src="https://miradorsalud.com/wp-content/uploads/2023/07/Imagen1-Deterioro-Cognitivo-1.png" alt="Imagen 9">
+          </div>
+          <div class="centered-text">
+            <h2>9. Enfermedades Neurodegenerativas</h2>
+            <p>Como el Alzheimer y Parkinson; deterioran progresivamente el sistema nervioso.</p>
+          </div>
+        </div>
+    
+        <div class="centered-block reverse">
+          <div class="centered-img">
+            <img src="https://www.behealthpr.com/wp-content/uploads/2024/09/enfermedades-inflamatorias-intestinales-min.jpg" alt="Imagen 10">
+          </div>
+          <div class="centered-text">
+            <h2>10. Enfermedades Inflamatorias Intestinales</h2>
+            <p>Trastornos inflamatorios crónicos del tracto digestivo como Crohn y colitis ulcerosa.</p>
+          </div>
+        </div>
+    
+      </section>
+    </div>
+    </div>
+    <div id="contacto" class="content-section">
+      <span style="margin-left: 20px;"></span>
+          <div style="white-space: pre;"> </div>
+          <span style="margin-left: 20px;"></span>
+          <div style="white-space: pre;"> </div>
+          <span style="margin-left: 20px;"></span>
+      <p>El ejercicio es esencial para un estilo de vida saludable y juega un papel vital en la nutrición. Aquí tienes algunas opciones de actividad física que puedes incorporar a tu rutina diaria para complementar una dieta equilibrada:</p>
+      <center><h2>TIPS DE ACTIVIDAD FÍSICA</h2></center>
+      <div class="card28-container">
+        <div class="card28-grid">
+          <div class="card28-box">
+            <img src="https://img.freepik.com/vector-premium/ilustracion-dibujos-animados-nino-corriendo-estilo-diseno-plano_193369-944.jpg?semt=ais_hybrid&w=740" alt="Imagen 1" class="card28-img" />
+            <div class="card28-title">FOOTING</div>
+            <div class="card28-text">Una rutina de footing o trote suave consiste en salir a correr a un ritmo cómodo, sin presión de velocidad o distancia, para mejorar la salud cardiovascular y el bienestar general. </div>
+          </div>
+          <div class="card28-box">
+            <img src="https://previews.123rf.com/images/vipss/vipss2105/vipss210500208/168755181-ejercicio-de-elevaci%C3%B3n-de-piernas-concepto-de-fitness-en-l%C3%ADnea-fitness-de-entrenamiento-de-mujer.jpg" alt="Imagen 2" class="card28-img" />
+            <div class="card28-title">ELEVACIÓN DE PIERNAS</div>
+            <div class="card28-text">Una rutina de elevación de piernas para abdominales generalmente implica levantar las piernas desde una posición tumbado boca arriba o colgado de una barra, manteniendo el abdomen contraído</div>
+          </div>
+          <div class="card28-box">
+            <img src="https://static.vecteezy.com/system/resources/previews/004/903/245/non_2x/cartoon-character-of-cyclist-boy-vector.jpg" alt="Imagen 3" class="card28-img" />
+            <div class="card28-title">CICLISMO</div>
+            <div class="card28-text">El ciclismo es beneficioso para la nutrición porque mejora la eficiencia del cuerpo en la absorción y utilización de nutrientes, aumenta el flujo sanguíneo y el oxígeno, lo que facilita el transporte de nutrientes a los tejidos y órganos </div>
+          </div>
+          <div class="card28-box">
+            <img src="https://img.freepik.com/vector-premium/vector-personas-jugando-cuerda-salto-estilo-diseno-plano_995281-11771.jpg" alt="Imagen 4" class="card28-img" />
+            <div class="card28-title">SALTAR LA CUERDA </div>
+            <div class="card28-text">Saltar la cuerda ofrece numerosos beneficios para la salud, incluyendo mejorar la salud cardiovascular, fortalecer músculos, mejorar la coordinación y la agilidad, y aumentar la densidad ósea</div>
+          </div>
+        </div>
+      </div>
+      <center><h2>ACTIVIDADES FÍSICAS DE INTENSIDAD MODERNA </h2></center>
+        <center><img src="imagenes/ACTIVIDADFISICA.png" width="650px" height="550px"></center>
+      <ul type="disc">
+        <li>Caminar: Una caminata diaria de 30 minutos a un ritmo moderado puede mejorar tu salud cardiovascular, fortalecer tus huesos y músculos, y ayudarte a quemar calorías. </li>
+        <li>Bailar: Bailar es una forma divertida de activar tu cuerpo, mejorar tu coordinación y quemar calorías. </li>
+        <li>Nadar: La natación es un ejercicio completo que trabaja todos los grupos musculares y es suave para tus articulaciones. </li>
+        <li>Montar en bicicleta: Pedalear es una excelente manera de mejorar tu salud cardiovascular y fortalecer tus piernas. </li>
+        <li>Yoga: El yoga combina movimientos suaves con respiración profunda y relajación, lo que puede mejorar tu flexibilidad, fuerza y equilibrio. </li></ul>
+    <center><h2>ACTIVIDADES FÍSICAS DE INTENSIDAD ALTA</h2></center>
+    <center><img src="imagenes/HOLL.jpg" width="650px" height="550px"></center>
+      <ul type="disc">
+      <li>Correr: Correr es un ejercicio cardiovascular intenso que quema muchas calorías y mejora la salud de tu corazón. </li> 
+      <li>Entrenamiento en intervalos de alta intensidad (HIIT): El HIIT consiste en ráfagas cortas de ejercicio intenso seguidas de períodos de descanso, lo que puede quemar muchas calorías en poco tiempo. </li> 
+      <li>Levantamiento de pesas: El levantamiento de pesas fortalece tus músculos, aumenta tu masa muscular y mejora tu densidad ósea. </li> 
+      <li>Deportes de equipo: Practicar deportes como fútbol, baloncesto o tenis puede ser una forma divertida de hacer ejercicio intenso y mejorar tu coordinación. </li> </ul>
+    <center><h2>RECOMENDACIONES ADICIONALES</h2></center>
+    <center><img src="imagenes/10-consejos.webp" width="650px" height="550px"></center>
+    
+    
+      <ul type="disc">
+        <li>Varía tus actividades: Incorpora una variedad de actividades físicas para trabajar diferentes grupos musculares y evitar el aburrimiento. </li>
+        <li>Empieza gradualmente: Si eres nuevo en el ejercicio, comienza con actividades suaves y aumenta la intensidad y duración poco a poco. </li>
+        <li>Establece metas realistas: Fija metas que puedas alcanzar para mantenerte motivado y seguir progresando. </li>
+        <li>Escucha a tu cuerpo: Descansa cuando lo necesites y no te excedas para evitar lesiones.</li>
+        <li>Consulta a un profesional de la salud: Si tienes alguna condición médica, consulta a tu médico antes de comenzar cualquier programa de ejercicio. </li></ul>
+        </div>
+      
+      <span style="margin-left: 20px;"></span>
+          <div style="white-space: pre;"> </div>
+          <span style="margin-left: 20px;"></span>
+          <div style="white-space: pre;"> </div>
+          <span style="margin-left: 20px;"></span>
+    
+            
+        
+</div>
+<div id="dietas" class="content-section">
+  <div style="white-space: pre;"> </div>
+          <span style="margin-left: 20px;"></span>
+          <div style="white-space: pre;"> </div>
+          <span style="margin-left: 20px;"></span>
+          <div style="white-space: pre;"> </div>
+          <span style="margin-left: 20px;"></span>
+        
+<h1 class="title-fancy">DIETAS POPULARES</h1>
+  <div class="container">
+      <div class="card" onclick="showInfo('info-keto')">
+          <img src="https://i.dietdoctor.com/es/wp-content/uploads/2017/10/keto-guide_white_es.jpg?auto=compress%2Cformat&w=800&h=392&fit=crop" alt="Dieta Keto">
+          <h3>Dieta Keto</h3>
+      </div>
+      <div class="card" onclick="showInfo('info-mediterranea')">
+          <img src="https://masiaelaltet.es/blog/wp-content/uploads/menu-dieta-mediterranea.jpg" alt="Dieta Mediterránea">
+          <h3>Dieta Mediterránea</h3>
+      </div>
+      <div class="card" onclick="showInfo('info-vegetariana')">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQuwDJlItFMCxrcNpBBYqOozYmKb_TCo3Ew&s" alt="Dieta Vegetariana">
+          <h3>Dieta Vegetariana</h3>
+      </div>
+      <div class="card" onclick="showInfo('info-vegana')">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zbOmuWBZj6K-VmTtNedGPRKe1i_0ZwzuaA&s" alt="Dieta Vegana">
+          <h3>Dieta Vegana</h3>
+      </div>
+      <div class="card" onclick="showInfo('info-paleo')">
+          <img src="https://images.cookforyourlife.org/wp-content/uploads/2018/08/shutterstock_251595472.jpg" alt="Dieta Paleo">
+          <h3>Dieta Paleo</h3>
+      </div>
+      <div class="card" onclick="showInfo('info-dash')">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KYmCWqA7bHzZOiSvY1o6OJNpNRyQ0XLf9A&s" alt="Dieta DASH">
+          <h3>Dieta DASH</h3>
+      </div>
+      <div class="card" onclick="showInfo('info-atkins')">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3_O4FX18Hh4r9GH6c0MHKUoeUKIntJ9rQaw&s" alt="Dieta Atkins">
+          <h3>Dieta Atkins</h3>
+      </div>
+      <div class="card" onclick="showInfo('info-flexitariana')">
+          <img src="https://spanish.foodinsight.org/wp-content/uploads/2019/11/iStock-1134939780.jpg" alt="Dieta Flexitariana">
+          <h3>Dieta Flexitariana</h3>
+      </div>
+ </div><div id="info-keto" class="info"><center><h2>DIETA KETO</h2></center><p>Una dieta keto es una dieta muy baja en carbohidratos y con mayor contenido de grasa.En una dieta keto se comen menos carbohidratos, se mantiene un consumo moderado de proteína y puede que aumente la ingesta de grasa. La reducción de carbohidratos pone al cuerpo en un estado metabólico llamado cetosis, en donde la grasa (de tu cuerpo y de lo que comes) se consume para obtener energía.</p>
+<h2>Qué comer en una dieta keto</h2><p>Estos son los tipos de alimentos que puedes disfrutar en una dieta cetogénica. Las números representan carbohidratos netos, es decir, carbohidratos digeribles, por 100 gramos. Para permanecer en cetosis, menos es generalmente mejor:</p>
+<center><img src="https://i.dietdoctor.com/es/wp-content/uploads/2017/10/keto-guide_white_es.jpg?auto=compress%2Cformat&w=800&h=392&fit=crop" alt="Dieta Keto"></center>
+<p>Lo más importante para alcanzar la cetosis es evitar comer demasiados carbohidratos. Cuantos menos carbohidratos se consuma, más efectivo parece ser para alcanzar la cetosis, perder peso o revertir la diabetes tipo 2.</p></div>
+<div id="info-mediterranea" class="info"><center><h2>DIETA MEDITERRÁNEA</h2></center>
+  <center><img src="https://consumer.healthday.com/media-library/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8zMjYzODcwOS9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTY5MjY2ODI0MH0.CG1ctedciuXkC79jtCeUFebFbgBm74CgCcIQ9OBDGSY/image.jpg?width=1245&height=700&coordinates=0%2C498%2C0%2C499" ></center> <p>La dieta mediterránea es un tipo de alimentación basado en la cocina tradicional de los países ribereños del mar Mediterráneo. No existe una definición única para esta dieta. Pero, en la mayoría de los casos, tiene alto contenido de lo siguiente:</p>
+  <ul type="disc">
+    <li>Verduras</li>
+    <li>Frutas </li>
+    <li>Granos o cereales integrales </li>
+    <li> Frijoles</li>
+    <li>Frutos secos y semillas </li>
+    <li>Aceite de oliva </li>
+    <li>Hierbas y especias para condimentar </li>
+    </ul>
+    <p>Los principales pasos para seguir la dieta son los siguientes:</p>
+    <ul type="disc">
+      <li>Consume todos los días vegetales, frutas, granos o cereales integrales y grasas vegetales.</li>
+      <li>Come cada semana pescado, aves, frijoles, legumbres y huevos.</li>
+      <li>Limita la cantidad de carne roja que consumes.</li>
+      <li>Disfruta de porciones moderadas de productos lácteos.</li>
+      <li>Limita la cantidad de alimentos con azúcar añadido que consumes.</li>
+      </ul>
+      <p>Algunos otros aspectos que forman parte de la dieta mediterránea son los siguientes:</p>
+      <ul type="disc">
+        <li>Comparte las comidas con familiares y amigos.</li>
+        <li>Haz ejercicio de forma regular.</li>
+        <li>Bebe vino con moderación si consumes alcohol.</li>
+        </ul></div>
+<div id="info-vegetariana" class="info"><center><h2>DIETA VEGETARIANA</h2></center><center><img src="https://staticnew-prod.topdoctors.mx/files/Image/large/44fae64371e1cda08877e2f762b00f32.jpeg"></center>
+  <p>Una dieta vegetariana no incluye ningún tipo de carne, aves de corral ni mariscos. Es un plan de comidas compuesto más que todo de plantas. Estas incluyen:</p>
+  <ul type="disc">
+    <li>Vegetales</li>
+    <li>Frutas</li>
+    <li>Granos integrales</li>
+    <li>Legumbres</li>
+    <li>Semillas</li>
+    <li>Nueces</li>
+    <li>Puede incluir huevos y/o leche, si es lacto-ovo vegetariano</li>
+    </ul>
+    <p>Los tipos de dietas vegetarianas incluyen:</p>
+    <ul type="disc">
+      <li>Vegana: su dieta consiste en alimentos sólo a base de plantas. No incluye proteína animal o productos animales como los huevos, leche o miel.</li>
+      <li>Lactovegetariana: su dieta consiste en alimentos vegetales más algunos o todos los productos lácteos.</li>
+      <li>Lactoovovegetariano: su dieta consiste en alimentos vegetales, productos lácteos y huevos.</li>
+      <li>Semivegetariana o vegetariana parcial: su dieta consiste en alimentos vegetales y puede incluir pollo o pescado, productos lácteos y huevos. No incluye la carne roja.</li>
+      <li>Pescetariana: su dieta incluye vegetales y mariscos.</li>
+      </ul></div>
+<div id="info-vegana" class="info"><center><h2> DIETA VEGANA </h2></center><center><img src="https://www.iconicasports.com/wp-content/uploads/2019/10/C%C3%B3mo-llevar-una-dieta-vegana-saludable-F.jpg"></center><p>Una dieta vegana excluye todos los productos de origen animal, incluyendo carne, pescado, lácteos, huevos y miel. Se basa en alimentos de origen vegetal como frutas, verduras, granos, legumbres, frutos secos y semillas.</p>
+  <p>Ejemplo de plan de comidas vegano</p>
+  <p>Desayuno:</p>
+  <ul type="disc">
+    <li>Avena con frutas frescas, nueces y semillas de chía.</li>
+    <li>Batido de espinacas, plátano, leche de almendras y mantequilla de almendra.</li>
+    </ul>
+    <p>Almuerzo:</p>
+    <ul type="disc">
+      <li>Ensalada de quinoa con garbanzos, pepino, tomate, perejil y aderezo de limón.</li>
+      <li>Sándwich de hummus con aguacate y vegetales frescos.</li>
+      </ul>
+      <p>Cena:</p>
+      <ul type="disc">
+        <li>Curry de lentejas rojas con arroz integral.</li>
+        <li>Tacos de hongos portobello con pimientos y cilantro fresco.</li>
+        </ul>
+        <p>Snack:</p>
+      <ul type="disc">
+        <li>Frutas frescas o secas.</li>
+        <li>Palitos de zanahoria y apio con hummus.</li>
+        </ul>
+      </div>
+<div id="info-paleo" class="info"><center><h2>DIETA PALEO </h2></center><center><img src="https://images.cookforyourlife.org/wp-content/uploads/2018/08/shutterstock_251595472.jpg"></center><p>La dieta paleo se centra en el consumo de alimentos enteros y no procesados que se asemejan a lo que los humanos comían en la prehistoria. Esto incluye carnes magras, pescado, frutas, verduras, nueces y semillas, al tiempo que excluye alimentos procesados, azúcares refinados, lácteos y granos.</p>
+  <p>Ejemplo de plan de comidas vegano</p>
+  <p>Desayuno:</p>
+  <ul type="disc">
+    <li>Huevos revueltos con espinacas y champiñones.</li>
+    <li>Batido de frutas con leche de coco y semillas de chía.</li>
+    </ul>
+    <p>Almuerzo:</p>
+    <ul type="disc">
+      <li>Ensalada de pollo con aguacate, tomate, pepino y nueces.</li>
+      <li>Sopa de verduras con caldo de huesos.</li>
+      </ul>
+      <p>Cena:</p>
+      <ul type="disc">
+        <li>Filete de salmón a la parrilla con espárragos y zanahorias asadas.</li>
+        <li>Puré de coliflor.</li>
+        </ul>
+        <p>Snack:</p>
+      <ul type="disc">
+        <li>Manzana con mantequilla de almendra.</li>
+        <li>Palitos de zanahoria y apio con guacamole.</li>
+        </ul></div>
+<div id="info-dash" class="info"><center><h2>DIETA DASH</h2></center><center><img src="https://pbs.twimg.com/media/DDffd0UV0AA7hjZ?format=jpg&name=900x900"></center><p>La dieta DASH (Dietary Approaches to Stop Hypertension) está diseñada para ayudar a reducir la presión arterial y mejorar la salud cardiovascular a través de una alimentación equilibrada</p>
+  <p>La dieta DASH se centra en consumir alimentos ricos en nutrientes como potasio, calcio y magnesio, que ayudan a controlar la presión arterial. También implica reducir el consumo de sodio (sal) y alimentos procesados.</p>
+  <p>Alimentos recomendados en la dieta DASH</p>
+      <ul type="disc">
+        <li>Frutas y Verduras: Al menos 4-5 porciones al día. Ejemplos: manzanas, plátanos, naranjas, zanahorias, brócoli, espinacas.</li>
+        <li>Granos Enteros: Al menos 6-8 porciones al día. Ejemplos: arroz integral, quinoa, avena, pan integral.</li>
+        <li>Proteínas Magras: 2 o menos porciones de carnes magras, pollo y pescado al día. Incluye también legumbres y frutos secos.</li>
+        <li>Lácteos Bajos en Grasa: 2-3 porciones al día. Ejemplos: leche desnatada, yogur bajo en grasa, queso bajo en grasa.</li>
+        <li>Grasas Saludables: Cantidad moderada. Ejemplos: aceite de oliva, aguacate, nueces, semillas.        </li>
+        <li>Frutos Secos y Semillas: 4-5 porciones a la semana. Ejemplos: almendras, nueces, semillas de girasol.</li>
+        </ul> </div>
+<div id="info-atkins" class="info"><center><h2>DIETA ATKINS</h2></center><center><img src="https://www.clikisalud.net/wp-content/uploads/2024/07/dieta-atkins.jpg"></center><p>El principal enfoque de la dieta Atkins es mantener una dieta balanceada en carbohidratos, proteínas y grasas para una salud y pérdida de peso óptimas.La dieta Atkins afirma que la obesidad y los problemas de salud relacionados, como la diabetes tipo 2 y las enfermedades cardíacas, son culpa de la típica dieta estadounidense baja en grasa y alta en carbohidratos. La dieta Atkins dice que no es necesario evitar los cortes de carne grasos o eliminar el exceso de grasa</p>
+<p>Un día típico del menú de la dieta Atkins</p>
+      <ul type="disc">
+        <li>Desayuno. Aguacate (palta) relleno con huevo y jamón crudo. Las bebidas permitidas incluyen café, té, agua, refrescos dietéticos y té de hierbas.</li>
+        <li>Almuerzo. Ensalada de col rizada y queso azul con aderezo de avellanas, acompañada de una bebida permitida.</li>
+        <li>Cena. Salmón con alcachofas cocidas al vapor y mayonesa casera de limón amarillo, acompañado de una bebida permitida.</li>
+        <li>Refrigerios. Por lo general, puedes comer dos refrigerios al día. Los refrigerios pueden incluir un producto de la dieta Atkins, como un batido de chocolate o una barrita de granola. O bien, puedes consumir un refrigerio simple como apio o queso cheddar.</li>
+        </ul></div>
+<div id="info-flexitariana" class="info"><center><h2>DIETA FLEXITARIANA</h2></center><center><img src="https://c.files.bbci.co.uk/D340/production/_103808045_flexitarian_diet_getty.jpg"></center><p>La dieta flexitariana es una forma de alimentación que combina los beneficios de una dieta basada en plantas con la flexibilidad de incluir productos animales de vez en cuando. Aquí tienes una guía rápida sobre cómo funciona:</p>
+  <p>Beneficios</p>
+  <ul type="disc">
+    <li>Salud cardiovascular: Puede reducir el riesgo de enfermedades del corazón.</li>
+    <li>Control de peso: Ayuda a mantener un peso saludable.</li>
+    </ul>
+    <p>Ejemplo de plan de comidas</p>
+    <ul type="disc">
+      <li>Desayuno: Avena con frutas y nueces.</li>
+      <li>Almuerzo: Ensalada de quinoa con vegetales y garbanzos.</li>
+      <li>Cena: Tacos de pescado con ensalada de col.</li>
+      </ul>
+    <center><h2>¿SABIAS QUÉ?</h2></center><center><img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/14DC3/production/_103834458_diesta-para-salvar-el-mundo-esp-nc.png.webp"></center></div>
+  
+
+</div>
+<footer class="footer">
+    <ul class="social-icon">
+        <li class="icon-elem">
+          <a href="https://www.youtube.com/" class="icon" target="_blank">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="https://www.instagram.com/" class="icon" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="https://www.whatsapp.com/" class="icon" target="_blank">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="https://www.facebook.com/" class="icon" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="mailto:correo@example.com" class="icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </li>
+    </ul>
+
+    
+<p>&copy; GuiaMed - Este video es de <a href="https://www.youtube.com/watch?v=qHimbDfTXYg">YouTube</a>-Todos los derechos reservados</p>
+    
+</footer>
+<script
+type="module"
+src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+nomodule
+src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
+</body>
+</html>
